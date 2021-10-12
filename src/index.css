@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  /* background: #eee; */
+  background: rgb(37, 37, 37);
+  padding: 0 16px;
+  overflow-x: hidden;
+}
+
+.container-modal {
+  color: white;
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.modal-content {
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 7px;
+  width: 40vw;
+  background: rgb(51, 51, 51);
+  padding: 1rem;
+}
+
+.modal-content p {
+  float: right;
+  cursor: pointer;
+}
+
+.note-input {
+  background: transparent;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  color: white;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.title {
+  width: 85%;
+  font-size: 1.5rem;
+}
+
+.content {
+  font-size: 1rem;
+}
+
+.create-note {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 0.5rem 1rem;
+  float: right;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+}
+
+.create-note:hover {
+  background: rgba(77, 77, 77, 0.425);
+}
+
+.custom-fas-header {
+  font-size: 1.5rem;
+  position: relative;
+  transform: translate(0%, -30%);
+  left: 0;
+  opacity: 0.7;
+}
+
+.custom-fas-pen {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.create-noteIcon-container {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  background: rgba(63, 63, 63, 0.452);
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.create-noteIcon-container:hover {
+  background: rgba(112, 112, 112, 0.623);
+}
+
+header {
+  background-color: rgb(37, 37, 37);
+  margin: auto -16px;
+  margin-bottom: 1.5rem;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.note {
+  background: rgb(51, 51, 51);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  color: white;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
